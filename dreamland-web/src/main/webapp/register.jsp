@@ -22,6 +22,7 @@
     	<div class="zc">
         	<div class="bj_bai" style="height: 408px">
             <h3>欢迎注册</h3>
+
        	  	  <form action="${ctx}/doRegister" method="post" id="registerForm">
                   <span id="reg_span"></span>
                 <input id="phone" name="phone" type="text" class="kuang_txt phone" placeholder="手机号" onblur="checkPhone();">
@@ -33,6 +34,7 @@
                 <input id="password" name="password" type="password" class="kuang_txt possword" placeholder="密码" onKeyUp="CheckIntensity(this.value)" onblur="checkPassword();">
                   <br/>
                   <span id="password_span"></span>
+                  <p>测试使用</p>
                 <input id="nickName" name="nickName" type="text" class="kuang_txt possword" placeholder="昵称" onblur="checkNickName();">
                   <br/>
                   <span id="nickName_span" style="color: red"></span>
@@ -90,7 +92,7 @@
 
     //更换验证码
     function changeCaptcha() {
-        $("#captchaImg").attr('src', '${ctx}/captchaServlet?t=' + (new Date().getTime()));
+        $("#captchaImg").attr('src', '${ctx}/captchaServlet?t=89' + (new Date().getTime()));
     }
 
     //校验手机号
