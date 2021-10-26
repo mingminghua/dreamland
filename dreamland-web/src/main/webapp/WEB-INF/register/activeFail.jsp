@@ -162,7 +162,7 @@
                         <a href="http://www.dreamland.wang" onMouseOut="hideImg()"  onmouseover="showImg()">
                             微信
                             <div id="wxImg" style="display:none;height:50px;back-ground:#f00;position:absolute;">
-                                <img src="../../images/dreamland.png"/><br/>
+                                <img src="images/dreamland.png"/><br/>
                                 手机扫描二维码关注
                             </div>
                             <!-- <div class="foot-wechat-tips">

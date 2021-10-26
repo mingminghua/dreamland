@@ -8,6 +8,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.context.request.RequestContextHolder;
@@ -47,7 +48,7 @@ public class RegisterController {
      * @param phone
      * @return
      */
-    @RequestMapping("/checkPhone")
+    @RequestMapping(value = "/checkPhone",method = {RequestMethod.POST})
     @ResponseBody
     public Map<String, Object> checkPhone(Model model, @RequestParam(value = "phone", required = false) String phone) {
         log.debug("注册-判断手机号" + phone + "是否可用");
@@ -126,7 +127,7 @@ public class RegisterController {
      * @param code
      * @return
      */
-    @RequestMapping("/doRegister")
+    @RequestMapping(value = "/doRegister",method = {RequestMethod.POST})
     public String doRegister(Model model, @RequestParam(value = "email", required = false) String email,
                              @RequestParam(value = "password", required = false) String password,
                              @RequestParam(value = "phone", required = false) String phone,

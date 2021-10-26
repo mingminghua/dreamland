@@ -7,8 +7,8 @@ package wang.dreamland.www.mail;
 public class MailExample {
 
     public static void main (String args[]) throws Exception {
-        String email = "";
-        String validateCode = "";
+        String email = "www.1078604540@qq.com";
+        String validateCode = "8888";
         SendEmail.sendEmailMessage(email,validateCode);
 
     }
