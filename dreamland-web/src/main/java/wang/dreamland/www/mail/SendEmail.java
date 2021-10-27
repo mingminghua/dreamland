@@ -28,7 +28,7 @@ public class SendEmail {
            // Get session
            props.put("mail.smtp.auth", "true"); //这样才能通过验证
 
-           MyAuthenticator myauth = new MyAuthenticator(from, "");
+           MyAuthenticator myauth = new MyAuthenticator(from, "PLEXAXYCJYYAELEH");
            Session session = Session.getDefaultInstance(props, myauth);
 
 //    session.setDebug(true);
